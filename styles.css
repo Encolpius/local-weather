@@ -143,8 +143,13 @@ weather Information Section
   justify-content: space-between;
 }
 
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 li {
-  display: inline-block;
   color: white;
   padding: 6px;
   font-size: 24px;
@@ -182,6 +187,7 @@ Weather Picture
 Content
 ===================================
 */
+
 .content h2 {
   font-family: 'Marcellus', serif;
   color: white;
@@ -193,7 +199,38 @@ Content
 }
 
 #city-name {
-  margin-top: -1em;
+  font-size: 35px;
+}
+
+#showTemp {
+  margin-left: .4em;
+  font-size: 35px;
+}
+
+canvas {
+  margin-top: -2em;
+  width: 300;
+  height: 300;
+}
+
+button {
+  margin-right: 3.4em;
+  margin-top: 1.3em;
+  font-family: 'Marcellus', serif;
+  padding: 6px;
+  border-radius: 5px;
+  color: white;
+  background-color: #0F5474;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #0066ff;
+}
+
+.weather-info {
+  margin-left: 2em;
 }
 
 /*
@@ -209,7 +246,6 @@ Footer
 h4 {
   position: absolute;
   font-size: 14px;
-  bottom: 0;
   font-family: 'Marcellus', serif;
 }
 
