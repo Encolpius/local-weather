@@ -138,15 +138,6 @@ weather Information Section
 
 .weather-info ul {
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 li {
@@ -198,23 +189,15 @@ Content
   letter-spacing: 1.5px;
 }
 
-#city-name {
-  font-size: 35px;
-}
-
-#showTemp {
-  margin-left: .4em;
-  font-size: 35px;
-}
-
 canvas {
   margin-top: -2em;
+  margin-left: 17px;
   width: 300;
   height: 300;
 }
 
 button {
-  margin-right: 3.4em;
+  margin-right: 2.2em;
   margin-top: 1.3em;
   font-family: 'Marcellus', serif;
   padding: 6px;
@@ -233,6 +216,14 @@ button:hover {
   margin-left: 2em;
 }
 
+ul {
+  margin-right: 20px;
+}
+
+li {
+  padding: 15px;
+  font-style: italic;
+}
 /*
 ===================================
 Footer
@@ -247,6 +238,7 @@ h4 {
   position: absolute;
   font-size: 14px;
   font-family: 'Marcellus', serif;
+  margin-left: 6px;
 }
 
 a {

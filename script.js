@@ -93,7 +93,7 @@ $(document).ready(function() {
      var rawJson = JSON.stringify(result);
      var json = JSON.parse(rawJson);
      var weather = json.main.temp;
-     var fahrenheit = Math.floor(weather + (9/5) + 32);
+     var fahrenheit = Math.floor(json.main.temp);
      showTemp.textContent = fahrenheit + ' °F'
    })
  }
@@ -101,13 +101,11 @@ $(document).ready(function() {
   function switcher(json) {
     $(converter).click(function() {
       if (current === 'Fahrenheit') {
-        converter.textContent = "Celsius";
-        $('button').css('margin-left', '.8em')
+        converter.textContent = "Click For Fahrenheit";
         toCelsius(json);
         current = 'Celsius';
       } else if (current === "Celsius"){
-        converter.textContent = 'Fahrenheit';
-        $('button').css('margin-right', '.8em')
+        converter.textContent = 'Click For Celsius';
         toFahrenheit(json);
         current = 'Fahrenheit';
       }
